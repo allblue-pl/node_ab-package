@@ -1,0 +1,6 @@
+{
+  "name": "ab-package",
+  "dependencies": {
+    "ab-log": "0.1.*"
+  }
+}
