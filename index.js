@@ -1,6 +1,5 @@
 'use strict';
 
-
 const ABPackage = require('./lib/ABPackage.js')
 
 

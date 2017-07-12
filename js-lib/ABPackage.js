@@ -5,20 +5,18 @@ const abLog = require('ab-log');
 const NPM = require('./NPM.js');
 
 
-function ABPackage()
-{ let self = this;
+class ABPackage {
 
-}
-
-ABPackage.prototype = {
-
-    _defaultConfig: {
-        name: '###{{name}}###',
-        description: '###{{description}}###',
-        gitUri: '###{{getUri}}###',
-        author: '###{{author}}###',
-        keywords: [],
-    },
+    constructor()
+    { let self = this;
+        self._defaultConfig = {
+            name: '###{{name}}###',
+            description: '###{{description}}###',
+            gitUri: '###{{getUri}}###',
+            author: '###{{author}}###',
+            keywords: [],
+        };
+    }
 
     exec(exec_config)
     { let self = this;
@@ -46,7 +44,7 @@ ABPackage.prototype = {
             abLog.error('\r\nUnknown command `%s`.', command);
             self._printHelp();
         }
-    },
+    }
 
 
     _exec_Init(config)
@@ -60,17 +58,17 @@ ABPackage.prototype = {
 
         let npm = new NPM();
         npm.update(config, 'init', process.argv[3]);
-    },
+    }
 
     _createBower(config)
     { let self = this;
 
-    },
+    }
 
     _createNPM(config)
     { let self = this;
 
-    },
+    }
 
     _parseConfig(exec_config)
     { let self = this;
@@ -87,7 +85,7 @@ ABPackage.prototype = {
         }
 
         return config;
-    },
+    }
 
     _printHelp()
     { let self = this;
@@ -97,6 +95,6 @@ ABPackage.prototype = {
         abLog.log('  - publish [all, git, npm, bower]');
     }
 
-};
+}
 
 module.exports = ABPackage;
