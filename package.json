@@ -1,6 +1,7 @@
 {
   "name": "ab-package",
   "dependencies": {
-    "ab-log": "0.1.*"
+    "ab-log": "0.1.*",
+    "nodegit": "^0.20.2"
   }
 }
