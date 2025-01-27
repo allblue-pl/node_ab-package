@@ -15,7 +15,7 @@ Node package that simplifies creating and updating simple `npm` and `bower` pack
 ```
 'use strict';
 
-const abPackage = require('ab-package');
+const abPackage = from 'ab-package');
 
 
 abPackage.exec({

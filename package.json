@@ -1,7 +1,14 @@
 {
   "name": "ab-package",
+  "type": "module",
+  "version": "0.0.4",
+  "description": "Package manager and updater for npm, bower, etc.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "dependencies": {
-    "ab-log": "0.1.*",
-    "nodegit": "^0.20.2"
+    "ab-fs": "0.0.*",
+    "ab-log": "1.0.*"
   }
 }

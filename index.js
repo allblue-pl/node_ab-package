@@ -1,6 +1,4 @@
 'use strict';
 
-const ABPackage = require('./lib/ABPackage.js')
-
-
-module.exports = new ABPackage();
+import lib from './lib/index';
+module.exports = lib;
